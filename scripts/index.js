@@ -1,5 +1,10 @@
 $("#mobilemenu").click(openMenu);
 function openMenu(){
-  $('#mobilemenu').css('display', 'none');
-  $('.nav-link').css('display', 'block');
+  this.classList.toggle("change");
+  let navlink = $('.nav-link');
+  if (navlink.css('display') === 'none'){
+    navlink.css('display', 'block');
+  }else{
+    navlink.css('display', 'none');
+  }
 }
