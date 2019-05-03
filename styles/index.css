@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0 auto;
   color: white;
