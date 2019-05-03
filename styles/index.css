@@ -241,9 +241,11 @@ li> .fa{
     margin-top:30px;
     display:block;
   }
+  h2{
+    1.1em;
+  }
   #title>img{
     width: 270px;
-/*     height: 100px; */
   }
   #title>.grid>h2{
     margin-top: 30px;
@@ -255,7 +257,7 @@ li> .fa{
   }
   #list-of-features, #list-of-exclusives{
     width: 85%;
-    font-size: 1em;
+    font-size:.9em;
   }
   #list-of-features>li>p{
     padding-inline-start: 30px;
