@@ -100,11 +100,22 @@ body{
   margin-bottom: 30px;
   margin-top: 20px;
 }
-#features>img{
+/* #features>img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+} */
+
+#companies{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.comp-image{
+  width: 100px;
+  padding: 20px;
 }
 
 #exclusives{
@@ -156,13 +167,13 @@ body{
   display: flex;
   align-content: center;
   justify-content: center;
-
   margin-bottom: 40px;
-
 }
 .listitem{
   border: 1px solid white;
-  padding: 60px;
+/*   padding: 40px; */
+  height: 330px;
+  width: 300px;
 }
 .listitem:first-of-type{
   margin-right: 30px;
@@ -170,6 +181,7 @@ body{
 .listitem>h3{
   font-size: 2em;
   margin-bottom: 0;
+  margin-top: 70px;
 }
 .listitem>p{
   font-size: 1.4em;
@@ -183,9 +195,14 @@ body{
   outline: none;
   height: 50px;
   width: 130px;
-  background-color: #121b3d;
+  background-color: #070a16;
   color: white;
   font-size: 1.1em;
+  transition: all 1s;
+}
+.listitem>button:hover{
+  height: 70px;
+  width: 150px;
 }
 
 @media screen and (max-width: 600px){
@@ -214,7 +231,7 @@ body{
     font-size: 2em;
   }
   #video{
-    width: 100%;
+    width: 70%;
     height: 200px;
   }
   #list-of-features, #exclusives>p{
@@ -230,22 +247,22 @@ body{
     align-items: center;
   }
   .listitem{
-    width: 50%;
-    height: 100px;
+    width: 70%;
+    height: 160px;
   }
   .listitem:first-of-type{
     margin-bottom: 10px;
     margin-right: 0;
   }
   .listitem> h3{
-    margin-top:0;
+    margin-top:9px;
     font-size: 1.5em;
   }
   .listitem> p{
     font-size: 1em;
   }
   .listitem>button{
-    margin-top:10px;
+    margin-top:0px;
     font-size: 1em;
   }
 }
