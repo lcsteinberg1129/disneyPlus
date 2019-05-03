@@ -9,8 +9,11 @@ body{
   color: white;
   background-color: #070a17;
   font-family: Avenir-Light, Arial, Helvetica, sans-serif;
-/*   background-image: url('https://dmgz-splash-static.bamgrid.com/splash/sections/splash/builds/266c629…_1555958630163/images/background-1.jpg'); */
 
+}
+
+h2{
+  font-size: 2em;
 }
 
 .container{
@@ -101,15 +104,8 @@ body{
 
 
 #features, #exclusives{
-  margin-bottom: 30px;
   margin-top: 20px;
 }
-/* #features>img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-} */
 
 #companies{
   display: flex;
@@ -122,20 +118,39 @@ body{
   padding: 20px;
 }
 
+#list-of-features, #list-of-exclusives{
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+#list-of-features{
+  padding:0;
+}
+#list-of-features>li {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+#list-of-features>li>p{
+  padding-left: 80px;
+  width: 80%;
+  font-size: 1.3em;
+}
+li> .fa{
+  font-size: 2.6em;
+}
+
 #exclusives{
   text-align: center;
   margin-left: auto;
   margin-right:auto;
 }
-#list-of-features, #list-of-exclusives{
-  list-style-type: none;
-  font-size: 1.2em;
+#list-of-exclusives{
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
-#list-of-features>li, #list-of-exclusives>li{
+#list-of-exclusives>li{
   padding-top: 40px;
+  font-size: 1.3em;
   text-align: left;
 }
 
@@ -238,9 +253,16 @@ body{
     width: 70%;
     height: 200px;
   }
-  #list-of-features, #exclusives>p{
-    width: 88%;
+  #list-of-features, #list-of-exclusives{
+    width: 85%;
     font-size: 1em;
+  }
+  #list-of-features>li>p{
+    padding-inline-start: 30px;
+    width: 100%;
+  }
+  #list-of-features>li>.fa{
+    display:none;
   }
   #pricing> h2{
     margin-bottom: 20px;
